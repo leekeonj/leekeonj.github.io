@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+    font-family: _'Century Gothic'_;
+    background-color: rgb(235, 151, 151);
+}
+a{
+    text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: rgb(77, 212, 194);
+    height:125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    color: white;
+    font-size: 34px;
+    font-weight: 200;
+    text-align: center;
+}
+.navegacion{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    background: black;
+
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 90px;
+}
+.menu li a{
+    Display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.menu li{
+    flex-basis: 0;
+    flex-grow: 1;
+    border-right: 1px solid #363636;
+    position: relative; 
+}
+.menu .first-item{
+    border-left: 1px solid #363636;
+}
+img{
+    max-width: 100%;
+}
+.menu .imagen{
+    position: absolute;
+    width: 0%;
+    bottom: 0;
+    right: 30px;
+    z-index: 20;
+    -webkit-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    border-radius: 20px;
+}
+.menu li a .text-item{
+
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: orange;
+top: 0%;
+position:absolute;
+z-index: 10;
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+.menu li a .down-item{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+
+    -webkit-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+}
+ .contenido{  
+     display: flex;
+     flex-direction: column;
+     flex-wrap:wrap;
+     justify-content: center;
+     align-content: center;
+ }
+.menu li:hover .down-item, .menu li:hover .text-item{
+    top: 100%;
+    height: 115%;
+}
+.menu li:hover .imagen{
+    width: 100%;
+    right: 0%;
+}
+.h{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(223, 86, 23);
+}
+td{
+    transition: all 0.1s linear;
+    padding: 1px;
+    border-radius: 20px;
+    width: 250px;
+   
+  }
+  td:hover{
+    transform:  scale(1.1);
+    border:20px ;
+    border-color: rgb(24, 196, 187) ;
+}
+table{
+border-collapse: collapse;
+border: 0px;
+font-family: Arial, Helvetica, sans-serif;
+width: 1000px;
+height: 1000px;
+}
+img{
+padding: 3px;
+width:200px;
+height:200px;
+border-radius: 20px;
+}
+table tr:hover{
+  background-color: rgb(235, 151, 151);
+}
+table td:hover{
+  background-color: rgb(212, 199, 74);
+  color: white;
+}
+.marcoxd{
+    clip: 10px solid rgb(235, 151, 151);
+    height: 2875px;
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .adc{
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.Hosting{
+    color: white;
+    width: 100%;
+    height: 25px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.adca{
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    height: 60px;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
